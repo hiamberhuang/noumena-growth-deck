@@ -2455,61 +2455,10 @@ body.motion-paused .hud #motion .play-icon{display:block}
     <div style="flex:1.25;background:linear-gradient(150deg,rgba(228,0,58,.13),rgba(228,0,58,.05));border:1.5px solid rgba(228,0,58,.30);border-radius:14px;padding:13px 20px;display:flex;align-items:center;gap:14px">
       <span style="flex:none;font-size:13px;font-weight:800;color:var(--brand);white-space:nowrap">Noumena</span>
       <span style="font-size:13.5px;font-weight:700;color:var(--ink)">高密度测试 + 统计分布验证 + AI Agent 沉淀判断力</span>
-      <span style="margin-left:auto;flex:none;cursor:pointer;background:var(--brand);color:#fff;border-radius:999px;padding:6px 18px;font-size:12px;font-weight:800;white-space:nowrap;box-shadow:0 4px 12px rgba(228,0,58,.24)" onclick="pfOpen()">流量调优结果 ›</span></div>
+      <a href="https://hiamberhuang.github.io/noumena-growth-deck/traffic-result.html" target="_blank" rel="noopener" style="margin-left:auto;flex:none;background:var(--brand);color:#fff;border-radius:999px;padding:6px 18px;font-size:12px;font-weight:800;white-space:nowrap;text-decoration:none;box-shadow:0 4px 12px rgba(228,0,58,.24)">流量调优结果 ›</a></div>
   </div>
 
-  <div id="posFlow" style="display:none;position:absolute;inset:0;z-index:40;background:rgba(20,18,22,.44);backdrop-filter:blur(3px);align-items:center;justify-content:center" onclick="pfClose()">
-    <div style="width:76%;max-width:860px;background:#fff;border-radius:20px;box-shadow:0 24px 60px rgba(20,18,22,.28);padding:24px 30px" onclick="event.stopPropagation()">
-      <div style="display:flex;align-items:center;gap:12px">
-        <b style="font-size:17px;font-weight:800;color:var(--ink)">流量调优结果</b>
-        <span style="font-size:12.5px;color:var(--ink-3)">测试密度上去之后，优质组合从噪声里浮出来</span>
-        <span style="margin-left:auto;cursor:pointer;font-size:22px;color:var(--ink-4);line-height:1" onclick="pfClose()">&times;</span>
-      </div>
-      <div style="margin-top:16px;display:flex;gap:10px;align-items:flex-start">
-        <span style="flex:none;writing-mode:vertical-rl;font-size:11px;color:var(--ink-4);white-space:nowrap;padding-top:34px">留资转化率（点击 → 线索）</span>
-        <div style="flex:1;min-width:0;display:flex;gap:16px;align-items:center">
-          <div style="flex:1;min-width:0;display:flex;flex-direction:column">
-      <div style="text-align:center;margin-bottom:7px"><span style="background:rgba(14,15,19,.08);color:var(--ink-2);border-radius:999px;padding:3px 18px;font-size:12.5px;font-weight:800">Before</span></div>
-      <div style="position:relative;width:100%;aspect-ratio:320 / 250;border-left:1.5px solid #D9D5CE;border-bottom:1.5px solid #D9D5CE">
-        <svg viewBox="0 0 320 250" style="position:absolute;inset:0;width:100%;height:100%" preserveAspectRatio="none">
-          <rect x="166" y="0" width="154" height="120" fill="rgba(56,120,255,.07)"/>
-          <line x1="166" y1="0" x2="166" y2="250" stroke="#C4C1BB" stroke-width="1.1" stroke-dasharray="5 5"/>
-          <line x1="0" y1="120" x2="320" y2="120" stroke="#C4C1BB" stroke-width="1.1" stroke-dasharray="5 5"/>
-          <circle cx="51" cy="200" r="5.4" fill="#E4003A"/><circle cx="77" cy="220" r="5.4" fill="#E4003A"/><circle cx="90" cy="180" r="5.4" fill="#E4003A"/><circle cx="109" cy="210" r="5.4" fill="#E4003A"/><circle cx="128" cy="190" r="5.4" fill="#E4003A"/><circle cx="141" cy="225" r="5.4" fill="#E4003A"/><circle cx="160" cy="170" r="5.4" fill="#E4003A"/><circle cx="173" cy="205" r="5.4" fill="#E4003A"/><circle cx="192" cy="145" r="5.4" fill="#E4003A"/><circle cx="205" cy="185" r="5.4" fill="#E4003A"/><circle cx="224" cy="125" r="5.4" fill="#E4003A"/><circle cx="237" cy="165" r="5.4" fill="#E4003A"/><circle cx="250" cy="105" r="5.4" fill="#2FA36B"/><circle cx="211" cy="85" r="5.4" fill="#2FA36B"/><circle cx="115" cy="110" r="5.4" fill="#F0A32E"/><circle cx="90" cy="130" r="5.4" fill="#F0A32E"/><circle cx="269" cy="155" r="5.4" fill="#E4003A"/><circle cx="282" cy="180" r="5.4" fill="#E4003A"/>
-        </svg>
-        <span style="position:absolute;right:6px;top:4px;font-size:10px;font-weight:700;color:#5B7FD4">优先放大区</span>
-        <span style="position:absolute;left:53%;top:4px;font-size:9.5px;color:var(--ink-4)">基准 7.10%</span>
-        <span style="position:absolute;left:4px;top:42%;font-size:9.5px;color:var(--ink-4)">基准 0.71%</span>
-      </div>
-      <div style="margin-top:7px;font-size:11px;line-height:1.6;color:var(--ink-3);text-align:center">素材少、测试密度低——点散在左下噪声区，只能靠经验判断</div>
-    </div><span style="flex:none;color:var(--brand);font-size:22px;font-weight:800;margin-top:-18px">&#187;</span><div style="flex:1;min-width:0;display:flex;flex-direction:column">
-      <div style="text-align:center;margin-bottom:7px"><span style="background:var(--brand);color:#fff;border-radius:999px;padding:3px 18px;font-size:12.5px;font-weight:800">After</span></div>
-      <div style="position:relative;width:100%;aspect-ratio:320 / 250;border-left:1.5px solid #D9D5CE;border-bottom:1.5px solid #D9D5CE">
-        <svg viewBox="0 0 320 250" style="position:absolute;inset:0;width:100%;height:100%" preserveAspectRatio="none">
-          <rect x="166" y="0" width="154" height="120" fill="rgba(56,120,255,.07)"/>
-          <line x1="166" y1="0" x2="166" y2="250" stroke="#C4C1BB" stroke-width="1.1" stroke-dasharray="5 5"/>
-          <line x1="0" y1="120" x2="320" y2="120" stroke="#C4C1BB" stroke-width="1.1" stroke-dasharray="5 5"/>
-          <circle cx="198" cy="85" r="5.4" fill="#2FA36B"/><circle cx="218" cy="65" r="5.4" fill="#2FA36B"/><circle cx="237" cy="95" r="5.4" fill="#2FA36B"/><circle cx="256" cy="55" r="5.4" fill="#2FA36B"/><circle cx="275" cy="80" r="5.4" fill="#2FA36B"/><circle cx="230" cy="40" r="5.4" fill="#2FA36B"/><circle cx="282" cy="110" r="5.4" fill="#2FA36B"/><circle cx="186" cy="70" r="5.4" fill="#2FA36B"/><circle cx="102" cy="155" r="5.4" fill="#F0A32E"/><circle cx="77" cy="180" r="5.4" fill="#F0A32E"/><circle cx="134" cy="170" r="5.4" fill="#E4003A"/><circle cx="58" cy="200" r="5.4" fill="#E4003A"/><circle cx="166" cy="130" r="5.4" fill="#2FA36B"/>
-        </svg>
-        <span style="position:absolute;right:6px;top:4px;font-size:10px;font-weight:700;color:#5B7FD4">优先放大区</span>
-        <span style="position:absolute;left:53%;top:4px;font-size:9.5px;color:var(--ink-4)">基准 7.10%</span>
-        <span style="position:absolute;left:4px;top:42%;font-size:9.5px;color:var(--ink-4)">基准 0.71%</span>
-      </div>
-      <div style="margin-top:7px;font-size:11px;line-height:1.6;color:var(--ink-3);text-align:center">优质组合聚进右上「优先放大区」，可分辨、可复制、可交给 Agent</div>
-    </div>
-        </div>
-      </div>
-      <div style="margin-top:10px;text-align:center;font-size:11.5px;color:var(--ink-4)">点击率 CTR（曝光 → 点击）</div>
-      <div style="margin-top:14px;display:flex;justify-content:center;gap:22px">
-        <span style="display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-2)"><span style="width:9px;height:9px;border-radius:50%;background:#2FA36B"></span>成本达标</span>
-        <span style="display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-2)"><span style="width:9px;height:9px;border-radius:50%;background:#F0A32E"></span>接近目标</span>
-        <span style="display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-2)"><span style="width:9px;height:9px;border-radius:50%;background:#E4003A"></span>成本超标 / 无留资</span>
-      </div>
-    </div></div>
-<script>
-window.pfOpen=function(){document.getElementById('posFlow').style.display='flex';};
-window.pfClose=function(){document.getElementById('posFlow').style.display='none';};
-</script>
+  
 </section>
 
 <!-- ═════ V2-03 团队 ═════ -->
