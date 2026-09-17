@@ -3832,11 +3832,59 @@ body.motion-paused .hud #motion .play-icon{display:block}
     <span style="font-size:13.5px;letter-spacing:.3em;color:var(--ink-4)">2026</span>
   </div>
 </section>
+<section class="slide e9" aria-label="联系我们">
+  <div class="e9-in">
+    <img src="assets/p1-logo-trim.png" alt="Noumena" class="e9-logo">
+    <h2 class="e9-h"><em>重塑增长</em><br>探索增长的每一种可能</h2>
+    <span class="e9-div"></span>
+    <div class="e9-grid">
+      <div class="e9-links">
+        <div class="e9-lk"><span class="e9-ic" style="background:#FDF1F4"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#E4003A" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/></svg></span>
+          <div><i>官网</i><b>www.noumena.com.cn</b></div></div>
+        <div class="e9-lk"><span class="e9-ic" style="background:#FFE4E6;font-size:16px">🦞</span>
+          <div><i>GrowClaw</i><b>www.growclaw.site</b></div></div>
+        <div class="e9-lk"><span class="e9-ic" style="background:#EDE9FE"><svg width="14" height="14" viewBox="0 0 24 24" fill="#7c3aed"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></span>
+          <div><i>GrowX</i><b>noumena.com.cn/product/growx</b></div></div>
+      </div>
+      <div class="e9-qrs">
+        <div class="e9-qr">
+          <img src="assets/noumena-wechat-qr.png" alt="蒋骧慧微信二维码">
+          <b>蒋骧慧 Jett Jiang</b>
+          <span>COO · 扫码交流</span>
+        </div>
+        <div class="e9-qr">
+          <img src="assets/amber-wechat-qr.png" alt="黄家琪微信二维码">
+          <b>黄家琪 Amber Huang</b>
+          <span>市场负责人 · 扫码交流</span>
+        </div>
+      </div>
+    </div>
+  </div>
+<style>
+.e9{align-items:center;justify-content:center;padding:40px 60px !important}
+.e9-in{width:100%;max-width:980px;text-align:center}
+.e9-logo{height:34px;opacity:.6;margin:0 auto 22px;display:block}
+.e9-h{font-size:44px;line-height:1.32;font-weight:900;letter-spacing:-.02em;color:var(--ink);margin:0}
+.e9-h em{font-style:normal;color:var(--brand)}
+.e9-div{display:block;width:64px;height:2px;border-radius:2px;margin:18px auto 0;background:linear-gradient(90deg,#E4003A,#C9A96E)}
+.e9-grid{margin-top:40px;display:grid;grid-template-columns:auto auto;gap:72px;align-items:center;justify-content:center}
+.e9-links{display:flex;flex-direction:column;gap:18px;text-align:left}
+.e9-lk{display:flex;align-items:center;gap:13px}
+.e9-ic{flex:none;width:38px;height:38px;border-radius:10px;display:grid;place-items:center}
+.e9-lk i{display:block;font-style:normal;font-size:12.5px;color:var(--ink-4)}
+.e9-lk b{display:block;font-size:16.5px;font-weight:800;color:var(--ink)}
+.e9-qrs{display:flex;gap:36px}
+.e9-qr{width:172px}
+.e9-qr img{width:150px;height:150px;border-radius:14px;box-shadow:0 8px 26px rgba(20,18,22,.14);display:block;margin:0 auto 12px}
+.e9-qr b{display:block;font-size:14.5px;font-weight:800;color:var(--ink-2);white-space:nowrap}
+.e9-qr span{display:block;margin-top:3px;font-size:12.5px;color:var(--ink-4);white-space:nowrap}
+</style>
+</section>
 </div>
 
 <nav class="hud">
   <button id="prev" aria-label="上一页"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
-  <span class="counter" id="counter" aria-live="polite"><b>01</b> / 21</span>
+  <span class="counter" id="counter" aria-live="polite"><b>01</b> / 22</span>
   <button id="next" aria-label="下一页"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
   <button id="motion" aria-label="暂停动效" aria-pressed="false" title="暂停 / 继续动效（M）"><svg viewBox="0 0 24 24"><path class="pause-icon" d="M8 6v12M16 6v12"/><path class="play-icon" d="M9 6l9 6-9 6z"/></svg></button>
 </nav>
@@ -3870,7 +3918,7 @@ body.motion-paused .hud #motion .play-icon{display:block}
 
   slides.forEach((sl, k) => {
     sl.setAttribute('aria-hidden', 'true');
-    if (!sl.matches('.cover,.pr-summary-slide,.closing-slide')) {
+    if (!sl.matches('.cover,.pr-summary-slide,.closing-slide,.e9')) {
       const h = document.createElement('header');
       h.className = 'phd';
       h.innerHTML = '<span class="bd"><img src="assets/p1-logo-trim.png" alt="Noumena"></span>'
